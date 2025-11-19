@@ -1,0 +1,78 @@
+.rrr{
+    height: 30vh;
+    background-image: url("image/image_rome1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.AAA{
+     height: 30vh;
+    background-image: url("image/image_rome6.webp");
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+}
+
+.zzz{
+     height: 30vh;
+    background-image: url("image/image_rome4.webp");
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+}
+
+.reee{
+    height: 55vh;
+    background-image: url("image/image_rome2.webp");
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+}
+
+.nnn{
+    height: 55vh;
+    background-image: url("image/image_rome5.webp");
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+}
+
+.nnnb{
+    height:55vh;
+    background-image: url("image/image_rome3.webp");
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+}
+
+
+label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.photo,.experionse input{
+    width :100%;
+    padding:6px 12px;
+    border: 1px solid #ced4da;;
+    border-radius: 5px;
+}
+
+
+.experionse{
+    width :100%;
+    padding:6px 12px;
+    border: 1px solid #ced4da;;
+    border-radius: 5px;
+}
+@media (min-width: 576px) and (max-width: 990px) {
+    .zzz {
+        height: 55vh !important;
+    }
+}
+

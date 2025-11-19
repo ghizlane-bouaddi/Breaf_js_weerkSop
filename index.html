@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body class="hero">
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--button ajouter-->
+
+    <div class="row ms-3">
+        <div class="col-3 border vh-100  border border-danger">
+            <div class="d-flex flex-column gap-1">
+                <p class="mt-4 fw-bold">Staff Members (Unassigned)</p>
+                <div class="listview">
+                      <div id="Cards">
+                        <!-- <div class="carde border ps-2 d-flex my-2 align-items-center justify-content-between pl-8 px-3 ">
+                            <div class="image d-flex align-items-center">
+                                <img src="" class="image-per border-info rounded-circle my-1" alt="photo" width="70px" height="70px ">
+
+                                 <div class="User">
+                                 <p class="ps-2 fw-bold"></p>
+                            </div>
+                            </div>
+                           
+                            <div class="button-Edit">
+                                 <button class=" bg-warning text-light border border-1 rounded-3 px-4">Edit</button>
+
+                            </div>
+                        </div> -->
+
+                     </div>
+                </div>
+                 <button type="button" class="btn bg-success w-750 mt-2 text-light fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Add New Worker
+                    </button>
+            </div>
+
+        </div>
+      
+             <div class="col-9 border vh-100 border-primary">
+            <div class="container my-4">
+                <div class="row g-3">
+    <div class="col-12 col-sm-6 col-lg-4 rrr"></div>
+    <div class="col-12 col-sm-6 col-lg-4 AAA"></div>
+    <div class="col-12 col-sm-6 col-lg-4 zzz"></div>
+
+    <div class="col-12 col-sm-6 col-lg-4 reee"></div>
+    <div class="col-12 col-sm-6 col-lg-4 nnn"></div>
+    <div class="col-12 col-sm-6 col-lg-4 nnnb"></div>
+</div>
+
+                
+            </div>
+            </div>
+
+
+        </div>
+
+
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <form name="ajouterApprenant" action="" class="form">
+                        <div class="form-group d-flex flex-column">
+                            <div class="">
+                                <label for="firstname" class="form-label">Name</label>
+                                <input type="text" name="firstname" id="firstname" placeholder="your name"
+                                    class="form-control">
+                            </div>
+                            <div>
+                                <label for="lastname" class="form-label">Rol</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="your name"
+                                    class="form-control">
+                            </div>
+                        <div class="form-group">
+                           <label for="input-file" class="form-label" id="inputFile">Photo</label>
+                        <input type="file" accept="image/*" id="fileInput" class="photo">
+                          <img id="output" width="200">
+
+                        </div>
+
+                        <fieldset>Competence</fieldset>
+                        <div id ="experionse">
+                            <div id="dynamiqueForm"></div>
+                            <div class="form-group">
+                            <label for="text" class="form-label">company :</label>
+                            <input type="text" name="company" id="company" class="form-control"
+                                placeholder="company">
+                        </div> 
+                        
+                        <div>
+                             <label for="text" class="form-label">Role:</label>
+                            <input type="text" name="Role" id="Role" class="Role">
+                        </div>
+
+                        <div>
+                            <label for="text" class="form-label">From :</label>
+                            <input type="date" name="Date" id="Date" class="Date">
+                        </div>
+
+                        <div>
+                            <label for="text" class="form-label">To:</label>
+                            <input type="date" name="Date" id="Date" class="Date">
+                        </div>
+
+                        </div>
+                    
+                        
+                        <div class="from-group">
+                            <button type="button" id="ajouter" class="btn btn-primary w-100 mb-2">ajouter</button>
+
+                          <!---->  <button type="button" id="ajouteCompitence" class="btn btn-primary w-100">Save changes</button>
+                        </div>
+                        <div class="form-group mt-4">
+                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
