@@ -71,10 +71,12 @@ label{
     border-radius: 5px;
 }
 
-.ajouteee{
+.User p{
+    margin: 0 0;
+    padding-left:10px ;
+    
 
 }
-
 
 @media (min-width: 576px) and (max-width: 990px) {
     .zzz {

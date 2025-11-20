@@ -1,13 +1,26 @@
 
-let cart =[];
+let modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('exampleModal')) // Returns a Bootstrap modal instance
 
-function AjouteCate (){
+
+
+
 const firstname = document.getElementById("firstname");
 const Rool = document.getElementById("Rool");
 const  lastEmail= document.getElementById("lastEmail");
 const lastNumber = document.getElementById("lastNumber");
 const  company= document.getElementById("company");
+const nameregex = /^[a-zA-Z\s?]+$/;
+const emilregex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
+const numberregex = /^0[67]\d{8}$/;
 
+let cart =[];
+
+
+ 
+function AjouteCate (){
+
+
+    if(validationCart()){
 
  const persone ={ //is correct 
     name:firstname.value,
@@ -48,9 +61,40 @@ let cardHTML = `
 `;
 
  container.innerHTML += cardHTML;
-
+ modal.hide();
+}
 }
 
 document.getElementById('ajouteCompitence').addEventListener("click", AjouteCate);
 
+
+function validationCart(){
+   let user = true;
+        if (!nameregex.test(firstname.value)) {
+            firstname.style.borderColor = "red";
+           user =false;
+        } else {
+            firstname.style.borderColor = "green";
+           
+    };
+
+     if (!emilregex.test(lastEmail.value)) {
+            lastEmail.style.borderColor = "red";
+           user =false;
+        } else {
+            firstname.style.borderColor = "green";
+           
+    };
+
+
+    if (!numberregex.test(lastNumber.value)) {
+            lastNumber.style.borderColor = "red";
+           user =false;
+        } else {
+            lastNumber.style.borderColor = "green";
+           
+    };
+return user;
+    
+}
 
