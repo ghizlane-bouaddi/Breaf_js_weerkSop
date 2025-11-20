@@ -56,7 +56,7 @@ label{
     padding-top: 10px;
 }
 
-.photo,.experionse input{
+.photo,.experionse input,.Role{
     width :100%;
     padding:6px 12px;
     border: 1px solid #ced4da;;
@@ -70,9 +70,17 @@ label{
     border: 1px solid #ced4da;;
     border-radius: 5px;
 }
+
+.ajouteee{
+
+}
+
+
 @media (min-width: 576px) and (max-width: 990px) {
     .zzz {
         height: 55vh !important;
     }
 }
+
+
 
