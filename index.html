@@ -6,247 +6,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
     <title>Document</title>
 </head>
 
 <body class="hero">
 
-
-        
-
     <!--button ajouter-->
-
-    <div class="row ms-3 ">
-        <div class="col-12 col-md-3 border  border border-danger   ajouteee">
+    <div class="row ms-3">
+        <div class="col-12 col-md-3 border border-danger ajouteee">
             <div class="d-flex flex-column gap-1">
                 <p class="mt-4 fw-bold">Staff Members (Unassigned)</p>
-             <div id="Cards"></div> </div>
-             <button type="button" class="btn bg-success w-750 mt-2 text-light fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Add New Worker
-                    </button>
+                <div id="Cards"></div>
+            </div>
 
-                    
+            <button type="button" class="btn bg-success mt-2 text-light fw-bold"
+                style="width: 170px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Add New Worker
+            </button>
 
         </div>
-      
-             <div class="col-12 col-md-9 border border-primary">
+
+        <div class=" col-12 col-md-9 border border-primary">
             <div class="container my-4">
-                <div class="row g-3">
-    <div class="col-12 col-sm-6 col-lg-4 rrr">
-        <button type="button" class="btn bg-success w-750 mt-2 text-light fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#exampleCarte">
-                       +
-                    </button>
+                <div class="btn-custom  row g-3">
 
-                    <div id="Cards">
-                       <div class="carde border ps-2 d-flex my-2 align-items-center pl-4 px-3 w-70 rounded bg-light">
-                            <div class="image d-flex align-items-center">
-                                <img src="image/image-1.png" class="image-per border-info rounded-circle my-1" alt="photo" width="50px" height="50px ">
+                    <!-- button 1 -->
+                    <div class="zones col-12 col-sm-6 col-lg-4 rom1"id="zone1">
+                        <h3>Conference room</h3>
+                        <button type="button" class="btn bg-success mt-2 text-light fw-bold"
+                            style="width: 50px;"data-bs-toggle="modal" data-bs-target="#imageModal" id="Conference">
+                            +
+                        </button>
 
-                                 <div class="User">
-                                 <p class="">Ghizlane</p>
-                                 <p class="">it</p>
-                            </div>
-                            </div>
-                           
-                           </div>
-                        </div>
-    </div>
-    <div class="col-12 col-sm-6 col-lg-4 AAA">
-        <button type="button" class="btn bg-success w-750 mt-2 text-light fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#exampleCarte">
-                       +
-                    </button>
-    </div>
-    <div class="col-12 col-sm-6 col-lg-4 zzz">
-        <button type="button" class="btn bg-success w-750 mt-2 text-light fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#exampleCarte">
-                       +
-                    </button>
-    </div>
+                        
+                    </div>
 
-    <div class="col-12 col-sm-6 col-lg-4 reee">
-        <button type="button" class="btn bg-success w-750 mt-2 text-light fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#exampleCarte">
-                       +
-                    </button>
-    </div>
-    <div class="col-12 col-sm-6 col-lg-4 nnn">
-        <button type="button" class="btn bg-success w-750 mt-2 text-light fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#exampleCarte">
-                       +
-                    </button>
-    </div>
-    <div class="col-12 col-sm-6 col-lg-4 nnnb">
-        <button type="button" class="btn bg-success w-750 mt-2 text-light fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#exampleCarte">
-                       +
-                    </button>
-    </div>
-</div>
+                    <!-- Button 2 -->
+                    <div class="zones col-12 col-sm-6 col-lg-4 rom2" id="zone2">
+                         <h3>service room</h3>
+                        <button type="button" class="btn bg-success mt-2 text-light fw-bold"
+                            style="width: 50px;"data-bs-toggle="modal" data-bs-target="#imageModal" id="service">
+                            +
+                        </button>
+                    </div>
 
-                
+                    <!-- Button 3 -->
+                    <div class="zones col-12 col-sm-6 col-lg-4 rom3" id="zone3">
+                         <h3>security room</h3>
+
+                        <button type="button" class="btn bg-success mt-2 text-light fw-bold"
+                            style="width: 50px;"data-bs-toggle="modal" data-bs-target="#imageModal" id="security">
+                            +
+                        </button>
+                    </div>
+
+                    <!-- Button 4 -->
+                    <div class="zones col-12 col-sm-6 col-lg-4 rom4" id="zone4">
+                        <h3>Reception</h3>
+                        <button type="button" class="btn bg-success mt-2 text-light fw-bold"
+                            style="width: 50px;"data-bs-toggle="modal" data-bs-target="#imageModal" id="Reception">
+                            +
+                        </button>
+                    </div>
+
+                    <!-- Button 5 -->
+                    <div class="zones col-12 col-sm-6 col-lg-4 rom5"id="zone5">
+                         <h3>staff room</h3>
+                        <button type="button" class="btn bg-success mt-2 text-light fw-bold"
+                            style="width: 50px;"data-bs-toggle="modal" data-bs-target="#imageModal" id="staff"> 
+                            +
+                        </button>
+                    </div>
+
+                    <!-- Button 6 -->
+                    <div class="zones col-12 col-sm-6 col-lg-4 rom6"id="zone6">
+                         <h3>Vault</h3>
+
+                        <button type="button" class="btn bg-success mt-2 text-light fw-bold"
+                            style="width: 50px;"data-bs-toggle="modal" data-bs-target="#imageModal" id="Vault">
+                            +
+                        </button>
+                    </div>
+
+                </div>
             </div>
-            </div>
-
-
         </div>
-
-
+    </div>
 
     <!-- Modal 1 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                
+
                 <div class="modal-body">
-                    <form name="ajouterApprenant" action="" class="form">
-                        <div class="form-group d-flex flex-column">
-                            <div class="">
-                                <label for="firstname" class="form-label">Name</label>
-                                <input type="text" name="firstname" id="firstname" placeholder="your name"
-                                    class="form-control">
-                            </div>
-                            <div>
-                                <label for="lastname" class="form-label">Rol</label>
-                                <input type="text" name="lastname" id="Rool" placeholder="Rol"
-                                    class="form-control">
-                            </div>
-
-                             <div>
-                                <label for="lestEmail" class="form-label">Email</label>
-                                <input type="email" name="lastEmail" id="lastEmail" placeholder="#######@gmail.com"
-                                    class="form-control">
-                            </div>
-
-                             <div>
-                                <label for="lestNumber" class="form-label">le Téléphone</label>
-                                <input type="number" name="lastnumber" id="lastNumber" placeholder="06/07:00000000"
-                                    class="form-control">
-                            </div>
+                    <form name="ajouterApprenant" class="form">
 
                         <div class="form-group">
-                           <label for="input-file" class="form-label" id="inputFile">Photo</label>
-                        <input type="file" accept="image/" id="fileInput" class="photo">
-                          <img id="output" width="200">
+                            <label class="form-label">Name</label>
+                            <input type="text" id="firstname" class="form-control" placeholder="your name">
+                        </div>
 
+                        <div class="form-group">
+                            <label class="form-label">Role</label>
+                            <select id="Rool" class="form-control">
+                                <option>Réceptionniste</option>
+                                <option>Technicien IT</option>
+                                <option>Agent de sécurité</option>
+                                <option>Manager</option>
+                                <option>Nettoyage</option>
+                                <option>Autres rôles</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" id="lastEmail" class="form-control" placeholder="#######@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Téléphone</label>
+                            <input type="number" id="lastNumber" class="form-control" placeholder="06/07:00000000">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Photo</label>
+                            <input type="url" id="fileInput" class="form-control" placeholder="photo">
+                            <img id="output" width="200">
                         </div>
 
                         <fieldset>Competence</fieldset>
-                        <div id ="experionse">
+
+                        <div id="experionse">
                             <div id="dynamiqueForm"></div>
+<!-- 
                             <div class="form-group">
-                            <label for="text" class="form-label">company :</label>
-                            <input type="text" name="company" id="company" class="form-control"
-                                placeholder="company">
-                        </div> 
-                        
-                        <div>
-                             <label for="text" class="form-label">Role:</label>
-                            <input type="text" name="Role" id="Role" class="Role mb-2" placeholder="Rol">
+                                <label class="form-label">Company</label>
+                                <input type="text" id="company" class="nom form-control" placeholder="company">
+                            </div> -->
                         </div>
 
-                        </div>
-                    
-                        
-                        <div class="from-group">
-                            <button type="button" id="ajouter" class="btn btn-primary w-100 mb-2">ajouter</button>
+                        <button type="button" id="ajouter" class="btn btn-primary w-100 mb-2">Ajouter</button>
+                        <button type="button" id="ajouteCompitence" class="btn btn-primary w-100">Save changes</button>
 
-                          <!---->  <button type="button" id="ajouteCompitence" class="btn btn-primary w-100" > Save changes</button>
-                        </div>
-                        <div class="form-group mt-4">
-                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
+                        <button type="button" class="btn btn-secondary mt-4" data-bs-dismiss="modal">Close</button>
+
                     </form>
                 </div>
+
             </div>
         </div>
     </div>
 
-
-    <!--Modal 2-->
-<!-- <div class="modal" id="exampleCarte" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
- <div class="modal fade" id="exampleCarte" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal 2 -->
+    <div class="modal fade" id="exampleCarte" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
+
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
+
                 <div class="modal-body">
-                    <form name="editApprenant" action="" class="form">
-                        <div class="form-group d-flex flex-column">
-                            <div class="">
-                                <label for="firstname" class="form-label">Firstname</label>
-                                <input type="text" name="firstname" id="firstname" placeholder="your name"
-                                    class="form-control">
-                            </div>
-                            <div>
-                                <label for="lastname" class="form-label">Lastname</label>
-                                <input type="text" name="lastname" id="lastname" placeholder="your name"
-                                    class="form-control">
-                            </div>
+                   <div id="Cardse">
+                            
                         </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="hidden" name="email" id="email" class="form-control"
-                                placeholder="EMail@exemple.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="age" class="form-label">Age</label>
-                            <input class="form-control" type="number" name="age" id="age" value=0 min="0" max="100">
-                        </div>
-                        <div class="form-group">
-                            <label for="photo" class="form-label">Photo</label>
-                            <input type="file" name="photo" id="photo" class="form-control">
-                        </div>
-                        <fieldset>Competence</fieldset>
-                        <div id="dynamiqueForm"></div>
-                        <div class="from-group">
-                                <button type="button" id="ajouteCompitence" class="btn btn-primary w-100">ajoute Competence</button>
-                        </div>
-                        <div class="form-group mt-4">
-                            <button type="submit" class="ajouterComptetnece btn btn-info w-100" data-bs-dismiss="modal"> Modifier</button>
-                        </div>
-                    </form>
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
+
             </div>
         </div>
     </div>
 
 
+    <!--Modal-->
+
+    <div class="modal fade" id="imageModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">User Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="modalContent">
+        <!-- content by JS -->
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-        <script src="script.js"></script>
 </body>
 
 </html>
+
+
+
